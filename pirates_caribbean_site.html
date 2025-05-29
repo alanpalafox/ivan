@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué Pirata del Caribe eres?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¡Descubre tu Pirata Interior!</h1>
+        <p>Responde estas preguntas y averigua qué legendario pirata serías en los mares del Caribe.</p>
+    </header>
+
+    <main>
+        <form id="quiz-form">
+            <div class="question-block">
+                <p class="question">1. ¿Cuál es tu tesoro más preciado?</p>
+                <label><input type="radio" name="q1" value="oro"> Oro y joyas</label><br>
+                <label><input type="radio" name="q1" value="libertad"> La libertad en alta mar</label><br>
+                <label><input type="radio" name="q1" value="conocimiento"> Conocimiento y secretos</label><br>
+                <label><input type="radio" name="q1" value="amistad"> La lealtad de tu tripulación</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question">2. ¿Cómo resuelves un problema?</p>
+                <label><input type="radio" name="q2" value="engaño"> Con astucia y engaños</label><br>
+                <label><input type="radio" name="q2" value="fuerza"> Con la fuerza de mi espada</label><br>
+                <label><input type="radio" name="q2" value="negociacion"> Negociando hasta el último momento</label><br>
+                <label><input type="radio" name="q2" value="planes"> Con un plan meticuloso</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question">3. ¿Qué harías si te encuentras un mapa del tesoro?</p>
+                <label><input type="radio" name="q3" value="buscar"> Lo seguiría sin dudar, la aventura me llama</label><br>
+                <label><input type="radio" name="q3" value="compartir"> Lo compartiría con mi tripulación para una búsqueda conjunta</label><br>
+                <label><input type="radio" name="q3" value="vender"> Lo vendería al mejor postor</label><br>
+                <label><input type="radio" name="q3" value="estudiar"> Lo estudiaría para encontrar el truco</label>
+            </div>
+
+            <div class="question-block">
+                <p class="question">4. ¿Cuál es tu bebida favorita en la taberna?</p>
+                <label><input type="radio" name="q4" value="ron"> Un buen ron añejo</label><br>
+                <label><input type="radio" name="q4" value="agua"> Agua fresca, ¡hay que mantenerse sobrio!</label><br>
+                <label><input type="radio" name="q4" value="vino"> Vino exótico de tierras lejanas</label><br>
+                <label><input type="radio" name="q4" value="cerveza"> Cerveza, ¡cuanta más, mejor!</label>
+            </div>
+
+            <button type="submit">¡Descubrir mi Pirata!</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Tu Pirata Interior es:</h2>
+            <p id="pirate-name"></p>
+            <p id="pirate-description"></p>
+            <img id="pirate-image" src="" alt="Imagen del pirata" class="hidden">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El Galeón del Conocimiento. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
